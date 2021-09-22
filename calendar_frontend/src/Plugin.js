@@ -60,6 +60,17 @@ function Plugin() {
 
   useEffect(() => {
     getHolidays().then((data) => {
+      data.map(data=>{
+        data.start_date = new Date(data.start_date);
+      })
+      const sortedActivities = data.sort((a, b) =>b.start_date - a.start_date)
+      data.map(data=>{
+        data.start_date = data.start_date.toString()
+      })
+      console.log("fjnm ",holidays)
+      setHolidays(sortedActivities);
+    });
+    getHolidays().then((data) => {
       setHolidays(
         data.filter((holiday) => {
           return (
