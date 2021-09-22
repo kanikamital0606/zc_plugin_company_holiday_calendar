@@ -11,16 +11,16 @@
   width: 400px;
   z-index: 100;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* position: relative; */
-  background-color: rgba(255, 255, 255, 0.89);
+   /*position: relative;*/
+  background-color: white;
   border-radius: 10px;
   transition: 2s;
 }
 
 ._overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.35);
@@ -111,13 +111,7 @@
   margin-top: 35px;
 }
 
-/* .reminder_details {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-} */
-
-.reminder_box {
+.reminder_details {
   display: flex;
   gap: 25px;
   align-items: center;
@@ -170,8 +164,7 @@
   margin: 20px 0;
 }
 
-.show-text,
-.visible-text {
+.show-text, .visible-text{
   flex-basis: 30%;
 }
 .visible {
@@ -183,6 +176,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
 }
 
 .occurrence-dropdown input {
@@ -223,12 +217,12 @@
 .cancel {
   margin-right: 5px;
   background-color: #ffffff;
-  border: 1px solid #00b87c;
-  color: #00b87c;
+  border: 1px solid #00B87C;
+  color: #00B87C;
   padding: 12px 18px !important;
 }
 .create {
   margin-left: 5px;
-  background-color: #00b87c;
+  background-color: #00B87C;
   color: #ffffff;
 }
